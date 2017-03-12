@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Date_Picker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-dB-KxO">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="505979845.84244001">
+                                    <!--2017-01-13 05:57:25 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="pickerDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="BTm-0D-bGj"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It was a _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGh-Dy-Awf">
+                                <rect key="frame" x="477.5" y="252" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DGh-Dy-Awf" firstAttribute="centerX" secondItem="qE5-dB-KxO" secondAttribute="centerX" id="KRl-Au-L3d"/>
+                            <constraint firstAttribute="trailing" secondItem="qE5-dB-KxO" secondAttribute="trailing" id="QVw-P8-mX4"/>
+                            <constraint firstItem="qE5-dB-KxO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="fCn-Ql-rsP"/>
+                            <constraint firstItem="DGh-Dy-Awf" firstAttribute="top" secondItem="qE5-dB-KxO" secondAttribute="bottom" constant="8" symbolic="YES" id="otx-s6-8aA"/>
+                            <constraint firstItem="qE5-dB-KxO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uCo-fN-RGd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="DGh-Dy-Awf" id="4HB-UO-LfZ"/>
+                        <outlet property="picker" destination="qE5-dB-KxO" id="pgc-8A-YGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="121.46739130434784"/>
+        </scene>
+    </scenes>
+</document>
